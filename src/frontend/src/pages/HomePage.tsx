@@ -1,0 +1,25 @@
+import { Toaster } from "@/components/ui/sonner";
+import CTABannerSection from "../components/CTABannerSection";
+import DestinationsSection from "../components/DestinationsSection";
+import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
+import Navbar from "../components/Navbar";
+import UniversityLogosStrip from "../components/UniversityLogosStrip";
+import WhyChooseUsSection from "../components/WhyChooseUsSection";
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-background antialiased">
+      <Toaster position="top-right" richColors />
+      <Navbar />
+      <main>
+        <HeroSection />
+        <WhyChooseUsSection />
+        <DestinationsSection />
+        <UniversityLogosStrip />
+        <CTABannerSection />
+      </main>
+      <Footer />
+    </div>
+  );
+}
